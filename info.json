@@ -1,0 +1,14 @@
+{
+    "project-name": "Southeast-CS-Admin-Panel",
+    "version": "v1.0.0",
+    "description": "Admin control panel for Southeast CS mobile app.",
+    "authors": [
+        "Sion Pixley",
+        "Jeffrey Smith",
+        "Fasih Ur Rehman",
+        "Jaykumar Patel"
+    ],
+    "license": "proprietary",
+    "main-file": "Program.cs"
+}
+
