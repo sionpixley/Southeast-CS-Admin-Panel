@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -118,6 +121,11 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Announcement.cs" />
+    <Compile Include="Models\ApiClient.cs" />
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Program.cs" />
     <EmbeddedResource Include="Edit_Annc.resx">
       <DependentUpon>Edit_Annc.cs</DependentUpon>
@@ -157,6 +165,7 @@
     </EmbeddedResource>
     <None Include=".gitignore" />
     <None Include="info.json" />
+    <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
