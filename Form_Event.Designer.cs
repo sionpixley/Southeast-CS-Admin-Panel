@@ -36,7 +36,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.Home_E_bt = new System.Windows.Forms.Button();
             this.Back_E_bt = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -47,62 +47,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(410, 20);
+            this.label1.Location = new System.Drawing.Point(154, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 32);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Event info";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 95);
+            this.label2.Location = new System.Drawing.Point(12, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 32);
+            this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name of Event";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 165);
+            this.label3.Location = new System.Drawing.Point(12, 69);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(235, 32);
+            this.label3.Size = new System.Drawing.Size(91, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Location of Event";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 236);
+            this.label4.Location = new System.Drawing.Point(12, 99);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 32);
+            this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Date of Event";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 308);
+            this.label5.Location = new System.Drawing.Point(12, 129);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 32);
+            this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Gen. Info";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 370);
+            this.label7.Location = new System.Drawing.Point(12, 155);
+            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(260, 32);
+            this.label7.Size = new System.Drawing.Size(97, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Organization Name";
             // 
             // Home_E_bt
             // 
-            this.Home_E_bt.Location = new System.Drawing.Point(605, 496);
+            this.Home_E_bt.Location = new System.Drawing.Point(227, 208);
+            this.Home_E_bt.Margin = new System.Windows.Forms.Padding(1);
             this.Home_E_bt.Name = "Home_E_bt";
-            this.Home_E_bt.Size = new System.Drawing.Size(137, 50);
+            this.Home_E_bt.Size = new System.Drawing.Size(51, 21);
             this.Home_E_bt.TabIndex = 7;
             this.Home_E_bt.Text = "Home";
             this.Home_E_bt.UseVisualStyleBackColor = true;
@@ -110,69 +117,77 @@
             // 
             // Back_E_bt
             // 
-            this.Back_E_bt.Location = new System.Drawing.Point(814, 496);
+            this.Back_E_bt.Location = new System.Drawing.Point(305, 208);
+            this.Back_E_bt.Margin = new System.Windows.Forms.Padding(1);
             this.Back_E_bt.Name = "Back_E_bt";
-            this.Back_E_bt.Size = new System.Drawing.Size(137, 50);
+            this.Back_E_bt.Size = new System.Drawing.Size(51, 21);
             this.Back_E_bt.TabIndex = 8;
             this.Back_E_bt.Text = "Back";
             this.Back_E_bt.UseVisualStyleBackColor = true;
             this.Back_E_bt.Click += new System.EventHandler(this.Back_E_bt_Click);
             // 
-            // button3
+            // SubmitButton
             // 
-            this.button3.Location = new System.Drawing.Point(95, 496);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 50);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Submit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.SubmitButton.Location = new System.Drawing.Point(36, 208);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(1);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(51, 21);
+            this.SubmitButton.TabIndex = 9;
+            this.SubmitButton.Text = "Submit";
+            this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(306, 230);
+            this.dateTimePicker1.Location = new System.Drawing.Point(115, 96);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(497, 38);
+            this.dateTimePicker1.Size = new System.Drawing.Size(189, 20);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(306, 88);
+            this.textBox1.Location = new System.Drawing.Point(115, 37);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 38);
+            this.textBox1.Size = new System.Drawing.Size(97, 20);
             this.textBox1.TabIndex = 11;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(306, 291);
+            this.textBox2.Location = new System.Drawing.Point(115, 122);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 38);
+            this.textBox2.Size = new System.Drawing.Size(97, 20);
             this.textBox2.TabIndex = 12;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(306, 370);
+            this.textBox3.Location = new System.Drawing.Point(115, 155);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(1);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(253, 38);
+            this.textBox3.Size = new System.Drawing.Size(97, 20);
             this.textBox3.TabIndex = 13;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(306, 159);
+            this.textBox4.Location = new System.Drawing.Point(115, 67);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(1);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(253, 38);
+            this.textBox4.Size = new System.Drawing.Size(97, 20);
             this.textBox4.TabIndex = 14;
             // 
             // Form_Event
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 612);
+            this.ClientSize = new System.Drawing.Size(413, 257);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.Back_E_bt);
             this.Controls.Add(this.Home_E_bt);
             this.Controls.Add(this.label7);
@@ -181,6 +196,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form_Event";
             this.Text = "Form_Event";
             this.ResumeLayout(false);
@@ -198,7 +214,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Home_E_bt;
         private System.Windows.Forms.Button Back_E_bt;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;

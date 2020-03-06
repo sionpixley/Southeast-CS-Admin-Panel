@@ -43,75 +43,85 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(436, 9);
+            this.label1.Location = new System.Drawing.Point(164, 4);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 32);
+            this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Annc. Info";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 180);
+            this.label2.Location = new System.Drawing.Point(10, 75);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 32);
+            this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Author Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 264);
+            this.label3.Location = new System.Drawing.Point(10, 111);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 32);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Heading";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 340);
+            this.label4.Location = new System.Drawing.Point(10, 143);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 32);
+            this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Gen. Info";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(255, 173);
+            this.textBox1.Location = new System.Drawing.Point(96, 73);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 38);
+            this.textBox1.Size = new System.Drawing.Size(108, 20);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(255, 258);
+            this.textBox2.Location = new System.Drawing.Point(96, 108);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 38);
+            this.textBox2.Size = new System.Drawing.Size(108, 20);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(255, 337);
+            this.textBox3.Location = new System.Drawing.Point(96, 141);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 38);
+            this.textBox3.Size = new System.Drawing.Size(108, 20);
             this.textBox3.TabIndex = 6;
             // 
             // Create_A_Bt
             // 
-            this.Create_A_Bt.Location = new System.Drawing.Point(255, 430);
+            this.Create_A_Bt.Location = new System.Drawing.Point(96, 180);
+            this.Create_A_Bt.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Create_A_Bt.Name = "Create_A_Bt";
-            this.Create_A_Bt.Size = new System.Drawing.Size(145, 58);
+            this.Create_A_Bt.Size = new System.Drawing.Size(54, 24);
             this.Create_A_Bt.TabIndex = 7;
             this.Create_A_Bt.Text = "Create";
             this.Create_A_Bt.UseVisualStyleBackColor = true;
+            this.Create_A_Bt.Click += new System.EventHandler(this.Create_A_Bt_Click);
             // 
             // Home_A_Bt
             // 
-            this.Home_A_Bt.Location = new System.Drawing.Point(255, 595);
+            this.Home_A_Bt.Location = new System.Drawing.Point(96, 250);
+            this.Home_A_Bt.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Home_A_Bt.Name = "Home_A_Bt";
-            this.Home_A_Bt.Size = new System.Drawing.Size(145, 58);
+            this.Home_A_Bt.Size = new System.Drawing.Size(54, 24);
             this.Home_A_Bt.TabIndex = 8;
             this.Home_A_Bt.Text = "Home";
             this.Home_A_Bt.UseVisualStyleBackColor = true;
@@ -119,9 +129,10 @@
             // 
             // Back_A_bt
             // 
-            this.Back_A_bt.Location = new System.Drawing.Point(497, 595);
+            this.Back_A_bt.Location = new System.Drawing.Point(186, 250);
+            this.Back_A_bt.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Back_A_bt.Name = "Back_A_bt";
-            this.Back_A_bt.Size = new System.Drawing.Size(139, 58);
+            this.Back_A_bt.Size = new System.Drawing.Size(52, 24);
             this.Back_A_bt.TabIndex = 9;
             this.Back_A_bt.Text = "Back";
             this.Back_A_bt.UseVisualStyleBackColor = true;
@@ -129,9 +140,9 @@
             // 
             // Form_Annc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1121, 699);
+            this.ClientSize = new System.Drawing.Size(420, 293);
             this.Controls.Add(this.Back_A_bt);
             this.Controls.Add(this.Home_A_Bt);
             this.Controls.Add(this.Create_A_Bt);
@@ -142,6 +153,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Form_Annc";
             this.Text = "Form_Annc";
             this.ResumeLayout(false);

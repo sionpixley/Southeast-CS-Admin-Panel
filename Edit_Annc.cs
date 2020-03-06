@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Admin_Control_Panel.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +18,7 @@ namespace Admin_Control_Panel
         public Edit_Annc()
         {
             InitializeComponent();
+            getAllAnnouncements();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -41,9 +45,57 @@ namespace Admin_Control_Panel
             this.Close();
         }
 
-        private void btn_Delete_Click(object sender, EventArgs e)
+        private async void btn_Delete_Click(object sender, EventArgs e)
         {
+            Announcement announcement = (Announcement)Ann_ListBox.SelectedItem;
 
+            var uri = new Uri(string.Format(ApiClient.uriBase + "remove-announcement-by-id/" + announcement.id.ToString() + "/", string.Empty));
+            try
+            {
+                HttpResponseMessage response = await ApiClient.httpClient.DeleteAsync(uri);
+
+                if(response.IsSuccessStatusCode)
+                {
+                    getAllAnnouncements();
+                    MessageBox.Show("Announcement deleted.");
+                }
+                else if(response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    MessageBox.Show("Announcement does not exist.");
+                }
+                else
+                {
+                    MessageBox.Show("Error. Edit_Annc.cs btn_Delete_Click() try1");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error. Edit_Annc.cs btn_Delete_Click() catch1");
+            }
+        }
+
+        private async void getAllAnnouncements()
+        {
+            var uri = new Uri(string.Format(ApiClient.uriBase + "get-all-announcements/", string.Empty));
+            try
+            {
+                HttpResponseMessage response = await ApiClient.httpClient.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+                    Ann_ListBox.DataSource = JsonConvert.DeserializeObject<List<Announcement>>(content);
+                    Ann_ListBox.DisplayMember = "subject";
+                }
+                else
+                {
+                    MessageBox.Show("Error. Edit_Annc.cs getAllAnnouncements() try1");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error. Edit_Annc.cs getAllAnnouncements() catch1");
+            }
         }
     }
 }

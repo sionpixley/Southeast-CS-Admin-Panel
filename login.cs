@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Admin_Control_Panel.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,26 +31,56 @@ namespace Admin_Control_Panel
             txtbxPassword.PasswordChar = '*';
         }
 
-        private void btnLogIn_Click(object sender, EventArgs e)
+        private async void btnLogIn_Click(object sender, EventArgs e)
         {
-            string username, password;
+            string username = txtbxUsername.Text;
+            string password = txtbxPassword.Text;
+            password = ComputeSha256Hash(password);
 
-            username = txtbxUsername.Text;
-            password = txtbxPassword.Text;
-
-            if ((username == "test") && (password == "test"))
+            var obj = new Dictionary<string, string>
             {
-                this.Hide();
-                Form1 f1 = new Form1();
-                f1.ShowDialog();
-                this.Close();
+                { "username", username },
+                { "passwd", password }
+            };
+            string json = JsonConvert.SerializeObject(obj);
+
+            var uri = new Uri(string.Format(ApiClient.uriBase + "validate-admin/", string.Empty));
+            try
+            {
+                var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await ApiClient.httpClient.PostAsync(uri, httpContent);
+
+                if(response.IsSuccessStatusCode)
+                {
+                    this.Hide();
+                    Form1 f1 = new Form1();
+                    f1.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect username or password.");
+                    txtbxUsername.Clear();
+                    txtbxPassword.Clear();
+                }
             }
-
-            else
+            catch
             {
-                MessageBox.Show("Incorrect Username or Password entered.");
-                txtbxUsername.Clear();
-                txtbxPassword.Clear();
+                MessageBox.Show("Error. login.cs btnLogIn_Click() catch1");
+            }
+        }
+
+        private static string ComputeSha256Hash(string data)
+        {
+            using(SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(data));
+                StringBuilder builder = new StringBuilder();
+                for(int i = 0; i < bytes.Length; i += 1)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
 
