@@ -31,6 +31,13 @@ namespace Admin_Control_Panel
                 f2.ShowDialog();
                 this.Close();
             }
+            else
+            {
+                this.Hide();
+                Form3 f3 = new Form3();
+                f3.ShowDialog();
+                this.Close();
+            }
         }
 
         private void Exitbt_Click(object sender, EventArgs e)
