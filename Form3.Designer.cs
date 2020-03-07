@@ -38,10 +38,11 @@
             // 
             // HomeBt
             // 
-            this.HomeBt.Location = new System.Drawing.Point(138, 93);
+            this.HomeBt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.HomeBt.Location = new System.Drawing.Point(144, 152);
             this.HomeBt.Margin = new System.Windows.Forms.Padding(1);
             this.HomeBt.Name = "HomeBt";
-            this.HomeBt.Size = new System.Drawing.Size(58, 21);
+            this.HomeBt.Size = new System.Drawing.Size(129, 38);
             this.HomeBt.TabIndex = 11;
             this.HomeBt.Text = "Home";
             this.HomeBt.UseVisualStyleBackColor = true;
@@ -49,10 +50,11 @@
             // 
             // ContactBt
             // 
-            this.ContactBt.Location = new System.Drawing.Point(270, 51);
+            this.ContactBt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.ContactBt.Location = new System.Drawing.Point(233, 101);
             this.ContactBt.Margin = new System.Windows.Forms.Padding(1);
             this.ContactBt.Name = "ContactBt";
-            this.ContactBt.Size = new System.Drawing.Size(60, 21);
+            this.ContactBt.Size = new System.Drawing.Size(129, 38);
             this.ContactBt.TabIndex = 10;
             this.ContactBt.Text = "Contact";
             this.ContactBt.UseVisualStyleBackColor = true;
@@ -60,10 +62,11 @@
             // 
             // ArticleBt
             // 
-            this.ArticleBt.Location = new System.Drawing.Point(191, 51);
+            this.ArticleBt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.ArticleBt.Location = new System.Drawing.Point(233, 51);
             this.ArticleBt.Margin = new System.Windows.Forms.Padding(1);
             this.ArticleBt.Name = "ArticleBt";
-            this.ArticleBt.Size = new System.Drawing.Size(60, 21);
+            this.ArticleBt.Size = new System.Drawing.Size(129, 38);
             this.ArticleBt.TabIndex = 9;
             this.ArticleBt.Text = "Article";
             this.ArticleBt.UseVisualStyleBackColor = true;
@@ -71,10 +74,11 @@
             // 
             // EventEditBt
             // 
-            this.EventEditBt.Location = new System.Drawing.Point(116, 51);
+            this.EventEditBt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.EventEditBt.Location = new System.Drawing.Point(44, 101);
             this.EventEditBt.Margin = new System.Windows.Forms.Padding(1);
             this.EventEditBt.Name = "EventEditBt";
-            this.EventEditBt.Size = new System.Drawing.Size(60, 21);
+            this.EventEditBt.Size = new System.Drawing.Size(129, 38);
             this.EventEditBt.TabIndex = 8;
             this.EventEditBt.Text = "Event";
             this.EventEditBt.UseVisualStyleBackColor = true;
@@ -82,10 +86,11 @@
             // 
             // AnncBt
             // 
-            this.AnncBt.Location = new System.Drawing.Point(10, 51);
+            this.AnncBt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.AnncBt.Location = new System.Drawing.Point(44, 51);
             this.AnncBt.Margin = new System.Windows.Forms.Padding(1);
             this.AnncBt.Name = "AnncBt";
-            this.AnncBt.Size = new System.Drawing.Size(91, 21);
+            this.AnncBt.Size = new System.Drawing.Size(129, 38);
             this.AnncBt.TabIndex = 7;
             this.AnncBt.Text = "Announcement";
             this.AnncBt.UseVisualStyleBackColor = true;
@@ -94,10 +99,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 19);
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 15.9F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(10, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 13);
+            this.label1.Size = new System.Drawing.Size(406, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Click on specified button to edit section";
             // 
@@ -105,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 134);
+            this.ClientSize = new System.Drawing.Size(431, 200);
             this.Controls.Add(this.HomeBt);
             this.Controls.Add(this.ContactBt);
             this.Controls.Add(this.ArticleBt);
