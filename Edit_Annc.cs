@@ -40,8 +40,8 @@ namespace Admin_Control_Panel
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_Annc annc = new Form_Annc();
-            annc.ShowDialog();
+            Announcement_Edit e1 = new Announcement_Edit();
+            e1.ShowDialog();
             this.Close();
         }
 
