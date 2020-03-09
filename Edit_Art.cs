@@ -40,7 +40,8 @@ namespace Admin_Control_Panel
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_Art art = new Form_Art();
+            Article article = (Article)Art_ListBox.SelectedItem;
+            Article_Edit art = new Article_Edit(article);
             art.ShowDialog();
             this.Close();
         }

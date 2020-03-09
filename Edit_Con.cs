@@ -40,7 +40,8 @@ namespace Admin_Control_Panel
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_Con con = new Form_Con();
+            Contact contact = (Contact)Con_ListBox.SelectedItem;
+            Contact_Edit con = new Contact_Edit(contact);
             con.ShowDialog();
             this.Close();
         }

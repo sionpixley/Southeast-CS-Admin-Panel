@@ -40,7 +40,8 @@ namespace Admin_Control_Panel
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Announcement_Edit e1 = new Announcement_Edit();
+            Announcement announcement = (Announcement)Ann_ListBox.SelectedItem;
+            Announcement_Edit e1 = new Announcement_Edit(announcement);
             e1.ShowDialog();
             this.Close();
         }

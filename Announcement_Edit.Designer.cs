@@ -161,7 +161,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Announcement_Edit";
             this.Text = "Announcement_Edit";
-            this.Load += new System.EventHandler(this.Announcement_Edit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
