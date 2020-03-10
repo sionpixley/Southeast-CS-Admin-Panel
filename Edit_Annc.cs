@@ -2,14 +2,9 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Admin_Control_Panel
 {
@@ -40,8 +35,9 @@ namespace Admin_Control_Panel
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_Annc annc = new Form_Annc();
-            annc.ShowDialog();
+            Announcement announcement = (Announcement)Ann_ListBox.SelectedItem;
+            Announcement_Edit e1 = new Announcement_Edit(announcement);
+            e1.ShowDialog();
             this.Close();
         }
 

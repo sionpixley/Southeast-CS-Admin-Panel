@@ -39,7 +39,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 15);
+            this.label1.Location = new System.Drawing.Point(58, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(412, 24);
@@ -49,10 +49,11 @@
             // CreateRb
             // 
             this.CreateRb.AutoSize = true;
+            this.CreateRb.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
             this.CreateRb.Location = new System.Drawing.Point(123, 87);
-            this.CreateRb.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.CreateRb.Margin = new System.Windows.Forms.Padding(1);
             this.CreateRb.Name = "CreateRb";
-            this.CreateRb.Size = new System.Drawing.Size(56, 17);
+            this.CreateRb.Size = new System.Drawing.Size(73, 20);
             this.CreateRb.TabIndex = 1;
             this.CreateRb.TabStop = true;
             this.CreateRb.Text = "Create";
@@ -61,10 +62,11 @@
             // Editrb
             // 
             this.Editrb.AutoSize = true;
+            this.Editrb.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Editrb.Location = new System.Drawing.Point(320, 87);
-            this.Editrb.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Editrb.Margin = new System.Windows.Forms.Padding(1);
             this.Editrb.Name = "Editrb";
-            this.Editrb.Size = new System.Drawing.Size(79, 17);
+            this.Editrb.Size = new System.Drawing.Size(108, 20);
             this.Editrb.TabIndex = 2;
             this.Editrb.TabStop = true;
             this.Editrb.Text = "Edit/Delete";
@@ -72,10 +74,11 @@
             // 
             // ContBT
             // 
-            this.ContBT.Location = new System.Drawing.Point(165, 158);
-            this.ContBT.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.ContBT.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.ContBT.Location = new System.Drawing.Point(146, 148);
+            this.ContBT.Margin = new System.Windows.Forms.Padding(1);
             this.ContBT.Name = "ContBT";
-            this.ContBT.Size = new System.Drawing.Size(80, 19);
+            this.ContBT.Size = new System.Drawing.Size(95, 29);
             this.ContBT.TabIndex = 3;
             this.ContBT.Text = "Continue";
             this.ContBT.UseVisualStyleBackColor = true;
@@ -83,10 +86,11 @@
             // 
             // Exitbt
             // 
-            this.Exitbt.Location = new System.Drawing.Point(276, 158);
-            this.Exitbt.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Exitbt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.Exitbt.Location = new System.Drawing.Point(284, 148);
+            this.Exitbt.Margin = new System.Windows.Forms.Padding(1);
             this.Exitbt.Name = "Exitbt";
-            this.Exitbt.Size = new System.Drawing.Size(64, 19);
+            this.Exitbt.Size = new System.Drawing.Size(90, 29);
             this.Exitbt.TabIndex = 4;
             this.Exitbt.Text = "Exit";
             this.Exitbt.UseVisualStyleBackColor = true;
@@ -102,7 +106,7 @@
             this.Controls.Add(this.Editrb);
             this.Controls.Add(this.CreateRb);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form1";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -9,14 +9,19 @@ using System.Windows.Forms;
 
 namespace Admin_Control_Panel
 {
-    public partial class Form_Art : Form
+    public partial class Article_Edit : Form
     {
-        public Form_Art()
+        private Article art;
+
+        public Article_Edit(Article article)
         {
             InitializeComponent();
+            txtbx_Heading.Text = article.subject;
+            txtbx_GenInfo.Text = article.description;
+            art = article;
         }
 
-        private void Home_AR_bt_Click(object sender, EventArgs e)
+        private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 f1 = new Form1();
@@ -24,18 +29,18 @@ namespace Admin_Control_Panel
             this.Close();
         }
 
-        private void Back_AR_bt_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f1 = new Form2();
-            f1.ShowDialog();
+            Edit_Art e1 = new Edit_Art();
+            e1.ShowDialog();
             this.Close();
         }
 
-        private async void Submit_AR_bt_Click(object sender, EventArgs e)
+        private async void btn_Change_Click(object sender, EventArgs e)
         {
-            string subject = textBox1.Text;
-            string description = textBox2.Text;
+            string subject = txtbx_Heading.Text;
+            string description = txtbx_GenInfo.Text;
 
             var obj = new Dictionary<string, string>
             {
@@ -44,7 +49,7 @@ namespace Admin_Control_Panel
             };
             string json = JsonConvert.SerializeObject(obj);
 
-            var uri = new Uri(string.Format(ApiClient.uriBase + "add-article/", string.Empty));
+            var uri = new Uri(string.Format(ApiClient.uriBase + "edit-article-by-id/" + art.id.ToString() + "/", string.Empty));
             try
             {
                 var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
@@ -52,22 +57,20 @@ namespace Admin_Control_Panel
 
                 if(response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Article created.");
-                    textBox1.Clear();
-                    textBox2.Clear();
+                    MessageBox.Show("Article updated.");
                 }
-                else if(response.StatusCode == System.Net.HttpStatusCode.Found)
+                else if(response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    MessageBox.Show("Article already exists.");
+                    MessageBox.Show("Article does not exist.");
                 }
                 else
                 {
-                    MessageBox.Show("Error. Form_Art.cs Submit_AR_bt_Click() try1");
+                    MessageBox.Show("Error. Article_Edit.cs btn_Change_Click() try1");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Form_Art.cs Submit_AR_bt_Click() catch1");
+                MessageBox.Show("Error. Article_Edit.cs btn_Change_Click() catch1");
             }
         }
     }

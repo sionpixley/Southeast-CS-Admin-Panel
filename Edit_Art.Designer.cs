@@ -38,9 +38,10 @@
             // 
             // btn_Delete
             // 
-            this.btn_Delete.Location = new System.Drawing.Point(275, 216);
+            this.btn_Delete.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Delete.Location = new System.Drawing.Point(377, 178);
             this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(58, 23);
+            this.btn_Delete.Size = new System.Drawing.Size(104, 39);
             this.btn_Delete.TabIndex = 11;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // btn_Edit
             // 
-            this.btn_Edit.Location = new System.Drawing.Point(198, 216);
+            this.btn_Edit.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Edit.Location = new System.Drawing.Point(257, 178);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(58, 23);
+            this.btn_Edit.Size = new System.Drawing.Size(104, 39);
             this.btn_Edit.TabIndex = 10;
             this.btn_Edit.Text = "Edit";
             this.btn_Edit.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // btn_Back
             // 
-            this.btn_Back.Location = new System.Drawing.Point(117, 216);
+            this.btn_Back.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Back.Location = new System.Drawing.Point(138, 178);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(58, 23);
+            this.btn_Back.Size = new System.Drawing.Size(104, 39);
             this.btn_Back.TabIndex = 9;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = true;
@@ -68,9 +71,10 @@
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(38, 216);
+            this.btnHome.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHome.Location = new System.Drawing.Point(16, 178);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(58, 23);
+            this.btnHome.Size = new System.Drawing.Size(104, 39);
             this.btnHome.TabIndex = 8;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
@@ -78,18 +82,21 @@
             // 
             // Art_ListBox
             // 
+            this.Art_ListBox.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
             this.Art_ListBox.FormattingEnabled = true;
-            this.Art_ListBox.Location = new System.Drawing.Point(38, 48);
+            this.Art_ListBox.ItemHeight = 16;
+            this.Art_ListBox.Location = new System.Drawing.Point(16, 40);
             this.Art_ListBox.Name = "Art_ListBox";
-            this.Art_ListBox.Size = new System.Drawing.Size(295, 147);
+            this.Art_ListBox.Size = new System.Drawing.Size(465, 132);
             this.Art_ListBox.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 13);
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 15.9F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(12, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 13);
+            this.label1.Size = new System.Drawing.Size(469, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Click on an article and select to edit or delete.";
             // 
@@ -97,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 254);
+            this.ClientSize = new System.Drawing.Size(503, 232);
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_Back);

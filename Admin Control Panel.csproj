@@ -49,6 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Announcement_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Announcement_Edit.Designer.cs">
+      <DependentUpon>Announcement_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Article_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Article_Edit.Designer.cs">
+      <DependentUpon>Article_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_Edit.Designer.cs">
+      <DependentUpon>Contact_Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Edit_Annc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,12 @@
     </Compile>
     <Compile Include="Edit_Event.Designer.cs">
       <DependentUpon>Edit_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event_Edit.Designer.cs">
+      <DependentUpon>Event_Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -127,6 +151,15 @@
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="Program.cs" />
+    <EmbeddedResource Include="Announcement_Edit.resx">
+      <DependentUpon>Announcement_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Article_Edit.resx">
+      <DependentUpon>Article_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_Edit.resx">
+      <DependentUpon>Contact_Edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Edit_Annc.resx">
       <DependentUpon>Edit_Annc.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_Event.resx">
       <DependentUpon>Edit_Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event_Edit.resx">
+      <DependentUpon>Event_Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

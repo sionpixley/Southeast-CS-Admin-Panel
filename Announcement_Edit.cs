@@ -9,19 +9,20 @@ using System.Windows.Forms;
 
 namespace Admin_Control_Panel
 {
-    public partial class Form_Annc : Form
+    public partial class Announcement_Edit : Form
     {
-        public Form_Annc()
+        private Announcement ann;
+
+        public Announcement_Edit(Announcement announcement)
         {
             InitializeComponent();
+            txtbx_Name.Text = announcement.author;
+            txtbx_Heading.Text = announcement.subject;
+            txtbx_GenInfo.Text = announcement.description;
+            ann = announcement;
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Home_A_Bt_Click(object sender, EventArgs e)
+        private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 f1 = new Form1();
@@ -29,20 +30,20 @@ namespace Admin_Control_Panel
             this.Close();
         }
 
-        private void Back_A_bt_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f1 = new Form2();
-            f1.ShowDialog();
+            Edit_Annc e1 = new Edit_Annc();
+            e1.ShowDialog();
             this.Close();
         }
 
-        private async void Create_A_Bt_Click(object sender, EventArgs e)
+        private async void btn_Change_Click(object sender, EventArgs e)
         {
-            string author = textBox1.Text;
+            string author = txtbx_Name.Text;
+            string subject = txtbx_Heading.Text;
+            string description = txtbx_GenInfo.Text;
             string authoredDate = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss");
-            string subject = textBox2.Text;
-            string description = textBox3.Text;
 
             var obj = new Dictionary<string, string>
             {
@@ -53,7 +54,7 @@ namespace Admin_Control_Panel
             };
             string json = JsonConvert.SerializeObject(obj);
 
-            var uri = new Uri(string.Format(ApiClient.uriBase + "add-announcement/", string.Empty));
+            var uri = new Uri(string.Format(ApiClient.uriBase + "edit-announcement-by-id/" + ann.id.ToString() + "/", string.Empty));
             try
             {
                 var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
@@ -61,23 +62,20 @@ namespace Admin_Control_Panel
 
                 if(response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Announcement created.");
-                    textBox1.Clear();
-                    textBox2.Clear();
-                    textBox3.Clear();
+                    MessageBox.Show("Announcement successfully updated.");
                 }
-                else if(response.StatusCode == System.Net.HttpStatusCode.Found)
+                else if(response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    MessageBox.Show("Announcment already exists.");
+                    MessageBox.Show("Announcement does not exist.");
                 }
                 else
                 {
-                    MessageBox.Show("Error. Form_Annc.cs Create_A_Bt_Click() try1");
+                    MessageBox.Show("Error. Announcement_Edit.cs btn_Change_Click() try1");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Form_Annc.cs Create_A_Bt_Click() catch1");
+                MessageBox.Show("Error. Announcement_Edit.cs btn_Change_Click() catch1");
             }
         }
     }

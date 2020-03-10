@@ -2,14 +2,9 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Admin_Control_Panel
 {
@@ -40,7 +35,8 @@ namespace Admin_Control_Panel
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_Art art = new Form_Art();
+            Article article = (Article)Art_ListBox.SelectedItem;
+            Article_Edit art = new Article_Edit(article);
             art.ShowDialog();
             this.Close();
         }
