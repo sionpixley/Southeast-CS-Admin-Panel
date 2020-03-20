@@ -42,6 +42,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtbx_Time = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -92,7 +94,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(83, 126);
+            this.label5.Location = new System.Drawing.Point(83, 151);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 16);
@@ -103,7 +105,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(12, 155);
+            this.label7.Location = new System.Drawing.Point(10, 177);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 16);
@@ -113,7 +115,7 @@
             // Home_E_bt
             // 
             this.Home_E_bt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.Home_E_bt.Location = new System.Drawing.Point(15, 193);
+            this.Home_E_bt.Location = new System.Drawing.Point(13, 218);
             this.Home_E_bt.Margin = new System.Windows.Forms.Padding(1);
             this.Home_E_bt.Name = "Home_E_bt";
             this.Home_E_bt.Size = new System.Drawing.Size(78, 33);
@@ -125,7 +127,7 @@
             // Back_E_bt
             // 
             this.Back_E_bt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.Back_E_bt.Location = new System.Drawing.Point(142, 193);
+            this.Back_E_bt.Location = new System.Drawing.Point(138, 218);
             this.Back_E_bt.Margin = new System.Windows.Forms.Padding(1);
             this.Back_E_bt.Name = "Back_E_bt";
             this.Back_E_bt.Size = new System.Drawing.Size(78, 33);
@@ -137,7 +139,7 @@
             // SubmitButton
             // 
             this.SubmitButton.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.SubmitButton.Location = new System.Drawing.Point(278, 193);
+            this.SubmitButton.Location = new System.Drawing.Point(277, 218);
             this.SubmitButton.Margin = new System.Windows.Forms.Padding(1);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(78, 33);
@@ -164,7 +166,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(168, 126);
+            this.textBox2.Location = new System.Drawing.Point(167, 151);
             this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(188, 20);
@@ -172,7 +174,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(167, 155);
+            this.textBox3.Location = new System.Drawing.Point(168, 177);
             this.textBox3.Margin = new System.Windows.Forms.Padding(1);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(189, 20);
@@ -186,11 +188,31 @@
             this.textBox4.Size = new System.Drawing.Size(188, 20);
             this.textBox4.TabIndex = 14;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(49, 125);
+            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 16);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Time of Event:";
+            // 
+            // txtbx_Time
+            // 
+            this.txtbx_Time.Location = new System.Drawing.Point(167, 124);
+            this.txtbx_Time.Name = "txtbx_Time";
+            this.txtbx_Time.Size = new System.Drawing.Size(189, 20);
+            this.txtbx_Time.TabIndex = 16;
+            // 
             // Form_Event
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 241);
+            this.ClientSize = new System.Drawing.Size(380, 259);
+            this.Controls.Add(this.txtbx_Time);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -229,5 +251,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtbx_Time;
     }
 }
