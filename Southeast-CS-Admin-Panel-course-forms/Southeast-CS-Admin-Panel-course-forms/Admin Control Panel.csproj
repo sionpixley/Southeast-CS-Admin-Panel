@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EAE3E45-2512-41FF-9934-2D158A422F04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Admin_Control_Panel</RootNamespace>
+    <AssemblyName>Admin Control Panel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Announcement_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Announcement_Edit.Designer.cs">
+      <DependentUpon>Announcement_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Article_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Article_Edit.Designer.cs">
+      <DependentUpon>Article_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_Edit.Designer.cs">
+      <DependentUpon>Contact_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Annc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Annc.Designer.cs">
+      <DependentUpon>Edit_Annc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Art.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Art.Designer.cs">
+      <DependentUpon>Edit_Art.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Con.Designer.cs">
+      <DependentUpon>Edit_Con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Event.Designer.cs">
+      <DependentUpon>Edit_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event_Edit.Designer.cs">
+      <DependentUpon>Event_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Annc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Annc.Designer.cs">
+      <DependentUpon>Form_Annc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Art.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Art.Designer.cs">
+      <DependentUpon>Form_Art.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Con.Designer.cs">
+      <DependentUpon>Form_Con.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Event.Designer.cs">
+      <DependentUpon>Form_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Announcement.cs" />
+    <Compile Include="Models\ApiClient.cs" />
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="Announcement_Edit.resx">
+      <DependentUpon>Announcement_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Article_Edit.resx">
+      <DependentUpon>Article_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_Edit.resx">
+      <DependentUpon>Contact_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Annc.resx">
+      <DependentUpon>Edit_Annc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Art.resx">
+      <DependentUpon>Edit_Art.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Con.resx">
+      <DependentUpon>Edit_Con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Event.resx">
+      <DependentUpon>Edit_Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event_Edit.resx">
+      <DependentUpon>Event_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Annc.resx">
+      <DependentUpon>Form_Annc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Art.resx">
+      <DependentUpon>Form_Art.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Con.resx">
+      <DependentUpon>Form_Con.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Event.resx">
+      <DependentUpon>Form_Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".gitignore" />
+    <None Include="info.json" />
+    <None Include="packages.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

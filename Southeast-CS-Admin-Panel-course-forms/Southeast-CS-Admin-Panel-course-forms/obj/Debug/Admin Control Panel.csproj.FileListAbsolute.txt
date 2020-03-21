@@ -1,0 +1,18 @@
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin Control Panel.csprojAssemblyReference.cache
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Announcement_Edit.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Article_Edit.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Contact_Edit.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Edit_Annc.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Edit_Art.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Edit_Con.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Edit_Event.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Event_Edit.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Form1.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Form2.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Form3.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Form_Annc.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Form_Art.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Form_Con.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.Form_Event.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin_Control_Panel.login.resources
+C:\Users\pjayk\Downloads\Southeast-CS-Admin-Panel-course-forms\Southeast-CS-Admin-Panel-course-forms\obj\Debug\Admin Control Panel.csproj.GenerateResource.cache
