@@ -12,15 +12,14 @@ namespace Admin_Control_Panel
     public partial class Article_Edit : Form
     {
         private Article art;
-
+        
         public Article_Edit(Article article)
         {
             InitializeComponent();
-            txtbx_Heading.Text = article.subject;
             txtbx_GenInfo.Text = article.description;
             art = article;
         }
-
+        /*
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -73,5 +72,10 @@ namespace Admin_Control_Panel
                 MessageBox.Show("Error. Article_Edit.cs btn_Change_Click() catch1");
             }
         }
+
+        private void txtbx_GenInfo_TextChanged(object sender, EventArgs e)
+        {
+
+        }*/
     }
 }
