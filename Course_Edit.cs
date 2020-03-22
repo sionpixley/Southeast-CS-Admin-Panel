@@ -9,15 +9,15 @@ using System.Windows.Forms;
 
 namespace Admin_Control_Panel
 {
-    public partial class Article_Edit : Form
+    public partial class Course_Edit : Form
     {
-        private Article art;
+        private Course course;
         
-        public Article_Edit(Article article)
+        public Course_Edit(Course cour)
         {
             InitializeComponent();
-            txtbx_GenInfo.Text = article.description;
-            art = article;
+            txtbx_GenInfo.Text = cour.description;
+            course = cour;
         }
         /*
         private void btn_Home_Click(object sender, EventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace Admin_Control_Panel
 {
-    partial class Article_Edit
+    partial class Course_Edit
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace Admin_Control_Panel
 {
-    partial class Form_Art
+    partial class Form_Cour
     {
         /// <summary>
         /// Required designer variable.

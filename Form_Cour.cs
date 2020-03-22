@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Admin_Control_Panel
 {
-    public partial class Form_Art : Form
+    public partial class Form_Cour : Form
     {
-        public Form_Art()
+        public Form_Cour()
         {
             InitializeComponent();
         }
