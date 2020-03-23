@@ -13,7 +13,7 @@ namespace Admin_Control_Panel
         public Edit_Cour()
         {
             InitializeComponent();
-            getAllArticles();
+            getAllCourses();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -45,34 +45,34 @@ namespace Admin_Control_Panel
         {
             Course announcement = (Course)Art_ListBox.SelectedItem;
 
-            var uri = new Uri(string.Format(ApiClient.uriBase + "remove-article-by-id/" + announcement.id.ToString() + "/", string.Empty));
+            var uri = new Uri(string.Format(ApiClient.uriBase + "remove-course-by-id/" + announcement.id.ToString() + "/", string.Empty));
             try
             {
                 HttpResponseMessage response = await ApiClient.httpClient.DeleteAsync(uri);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    getAllArticles();
-                    MessageBox.Show("Article deleted.");
+                    getAllCourses();
+                    MessageBox.Show("Course deleted.");
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    MessageBox.Show("Article does not exist.");
+                    MessageBox.Show("Course does not exist.");
                 }
                 else
                 {
-                    MessageBox.Show("Error. Edit_Art.cs btn_Delete_Click() try1");
+                    MessageBox.Show("Error. Edit_Cour.cs btn_Delete_Click() try1");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Edit_Art.cs btn_Delete_Click() catch1");
+                MessageBox.Show("Error. Edit_Cour.cs btn_Delete_Click() catch1");
             }
         }
 
-        private async void getAllArticles()
+        private async void getAllCourses()
         {
-            var uri = new Uri(string.Format(ApiClient.uriBase + "get-all-articles/", string.Empty));
+            var uri = new Uri(string.Format(ApiClient.uriBase + "get-all-courses/", string.Empty));
             try
             {
                 HttpResponseMessage response = await ApiClient.httpClient.GetAsync(uri);
@@ -81,16 +81,16 @@ namespace Admin_Control_Panel
                 {
                     string content = await response.Content.ReadAsStringAsync();
                     Art_ListBox.DataSource = JsonConvert.DeserializeObject<List<Course>>(content);
-                    Art_ListBox.DisplayMember = "subject";
+                    Art_ListBox.DisplayMember = "name";
                 }
                 else
                 {
-                    MessageBox.Show("Error. Edit_Art.cs getAllArticles() try1");
+                    MessageBox.Show("Error. Edit_Cour.cs getAllCourses() try1");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Edit_Art.cs getAllArticles() catch1");
+                MessageBox.Show("Error. Edit_Cour.cs getAllCourses() catch1");
             }
         }
     }

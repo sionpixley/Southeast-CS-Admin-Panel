@@ -34,17 +34,31 @@ namespace Admin_Control_Panel
 
         private async void Submit_AR_bt_Click(object sender, EventArgs e)
         {
-            string subject = textBox1.Text;
-            string description = textBox2.Text;
-
-            var obj = new Dictionary<string, string>
+            string name = textBox1.Text;
+            string number = textBox2.Text;
+            int credits = 0;
+            bool wasSuccessful = int.TryParse(textBox3.Text, out credits);
+            if(!wasSuccessful)
             {
-                { "subject", subject },
-                { "description", description }
+                MessageBox.Show("Please use an integer value for credit field.");
+                return;
+            }
+            string prerequisites = textBox4.Text;
+            string availability = textBox5.Text;
+            string description = textBox6.Text;
+
+            var obj = new 
+            {
+                name,
+                number,
+                credits,
+                prerequisites,
+                availability,
+                description
             };
             string json = JsonConvert.SerializeObject(obj);
 
-            var uri = new Uri(string.Format(ApiClient.uriBase + "add-article/", string.Empty));
+            var uri = new Uri(string.Format(ApiClient.uriBase + "add-course/", string.Empty));
             try
             {
                 var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
@@ -52,22 +66,26 @@ namespace Admin_Control_Panel
 
                 if(response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Article created.");
+                    MessageBox.Show("Course created.");
                     textBox1.Clear();
                     textBox2.Clear();
+                    textBox3.Clear();
+                    textBox4.Clear();
+                    textBox5.Clear();
+                    textBox6.Clear();
                 }
                 else if(response.StatusCode == System.Net.HttpStatusCode.Found)
                 {
-                    MessageBox.Show("Article already exists.");
+                    MessageBox.Show("Course already exists.");
                 }
                 else
                 {
-                    MessageBox.Show("Error. Form_Art.cs Submit_AR_bt_Click() try1");
+                    MessageBox.Show("Error. Form_Cour.cs Submit_AR_bt_Click() try1");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Form_Art.cs Submit_AR_bt_Click() catch1");
+                MessageBox.Show("Error. Form_Cour.cs Submit_AR_bt_Click() catch1");
             }
         }
     }
