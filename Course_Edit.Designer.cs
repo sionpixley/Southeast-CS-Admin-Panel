@@ -1,6 +1,6 @@
 ﻿namespace Admin_Control_Panel
 {
-    partial class Form_Art
+    partial class Course_Edit
     {
         /// <summary>
         /// Required designer variable.
@@ -50,21 +50,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 15.9F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(75, 11);
+            this.label1.Location = new System.Drawing.Point(56, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 29);
+            this.label1.Size = new System.Drawing.Size(172, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Course Info";
+            this.label1.Text = "Edit Course Info";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(32, 100);
+            this.label2.Location = new System.Drawing.Point(24, 81);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 21);
+            this.label2.Size = new System.Drawing.Size(71, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Number:";
             // 
@@ -72,36 +72,36 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(32, 62);
+            this.label3.Location = new System.Drawing.Point(24, 50);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 21);
+            this.label3.Size = new System.Drawing.Size(55, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Name:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(238, 61);
+            this.textBox1.Location = new System.Drawing.Point(178, 50);
             this.textBox1.Margin = new System.Windows.Forms.Padding(1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(409, 22);
+            this.textBox1.Size = new System.Drawing.Size(308, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(238, 101);
+            this.textBox2.Location = new System.Drawing.Point(178, 82);
             this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(409, 22);
+            this.textBox2.Size = new System.Drawing.Size(308, 20);
             this.textBox2.TabIndex = 4;
             // 
             // Submit_AR_bt
             // 
             this.Submit_AR_bt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.Submit_AR_bt.Location = new System.Drawing.Point(557, 415);
+            this.Submit_AR_bt.Location = new System.Drawing.Point(418, 337);
             this.Submit_AR_bt.Margin = new System.Windows.Forms.Padding(1);
             this.Submit_AR_bt.Name = "Submit_AR_bt";
-            this.Submit_AR_bt.Size = new System.Drawing.Size(104, 42);
+            this.Submit_AR_bt.Size = new System.Drawing.Size(78, 34);
             this.Submit_AR_bt.TabIndex = 5;
             this.Submit_AR_bt.Text = "Submit";
             this.Submit_AR_bt.UseVisualStyleBackColor = true;
@@ -110,10 +110,10 @@
             // Back_AR_bt
             // 
             this.Back_AR_bt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.Back_AR_bt.Location = new System.Drawing.Point(297, 415);
+            this.Back_AR_bt.Location = new System.Drawing.Point(223, 337);
             this.Back_AR_bt.Margin = new System.Windows.Forms.Padding(1);
             this.Back_AR_bt.Name = "Back_AR_bt";
-            this.Back_AR_bt.Size = new System.Drawing.Size(104, 42);
+            this.Back_AR_bt.Size = new System.Drawing.Size(78, 34);
             this.Back_AR_bt.TabIndex = 6;
             this.Back_AR_bt.Text = "Back";
             this.Back_AR_bt.UseVisualStyleBackColor = true;
@@ -122,10 +122,10 @@
             // Home_AR_bt
             // 
             this.Home_AR_bt.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
-            this.Home_AR_bt.Location = new System.Drawing.Point(36, 415);
+            this.Home_AR_bt.Location = new System.Drawing.Point(27, 337);
             this.Home_AR_bt.Margin = new System.Windows.Forms.Padding(1);
             this.Home_AR_bt.Name = "Home_AR_bt";
-            this.Home_AR_bt.Size = new System.Drawing.Size(104, 42);
+            this.Home_AR_bt.Size = new System.Drawing.Size(78, 34);
             this.Home_AR_bt.TabIndex = 7;
             this.Home_AR_bt.Text = "Home";
             this.Home_AR_bt.UseVisualStyleBackColor = true;
@@ -135,9 +135,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 150);
+            this.label4.Location = new System.Drawing.Point(25, 122);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 21);
+            this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "Credits";
             // 
@@ -145,9 +146,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 203);
+            this.label5.Location = new System.Drawing.Point(24, 165);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 21);
+            this.label5.Size = new System.Drawing.Size(106, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Prerequisites:";
             // 
@@ -155,9 +157,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 254);
+            this.label6.Location = new System.Drawing.Point(25, 206);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 21);
+            this.label6.Size = new System.Drawing.Size(99, 16);
             this.label6.TabIndex = 10;
             this.label6.Text = "Availability:";
             // 
@@ -165,47 +168,52 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(33, 306);
+            this.label7.Location = new System.Drawing.Point(25, 249);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 21);
+            this.label7.Size = new System.Drawing.Size(97, 16);
             this.label7.TabIndex = 11;
             this.label7.Text = "Description:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(238, 150);
+            this.textBox3.Location = new System.Drawing.Point(178, 122);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(409, 22);
+            this.textBox3.Size = new System.Drawing.Size(308, 20);
             this.textBox3.TabIndex = 12;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(238, 203);
+            this.textBox4.Location = new System.Drawing.Point(178, 165);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(409, 22);
+            this.textBox4.Size = new System.Drawing.Size(308, 19);
             this.textBox4.TabIndex = 13;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(238, 254);
+            this.textBox5.Location = new System.Drawing.Point(178, 206);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(409, 22);
+            this.textBox5.Size = new System.Drawing.Size(308, 20);
             this.textBox5.TabIndex = 14;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(238, 306);
+            this.textBox6.Location = new System.Drawing.Point(178, 249);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(409, 84);
+            this.textBox6.Size = new System.Drawing.Size(308, 69);
             this.textBox6.TabIndex = 15;
             // 
-            // Form_Art
+            // Course_Edit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 505);
+            this.ClientSize = new System.Drawing.Size(651, 410);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -223,7 +231,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "Form_Art";
+            this.Name = "Course_Edit";
             this.Text = "Form_Art";
             this.ResumeLayout(false);
             this.PerformLayout();

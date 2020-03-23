@@ -32,7 +32,7 @@ namespace Admin_Control_Panel
         private void ArticleBt_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Edit_Art art = new Edit_Art();
+            Edit_Cour art = new Edit_Cour();
             art.ShowDialog();
             this.Close();
         }

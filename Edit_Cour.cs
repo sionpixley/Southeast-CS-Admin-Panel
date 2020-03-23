@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace Admin_Control_Panel
 {
-    public partial class Edit_Art : Form
+    public partial class Edit_Cour : Form
     {
-        public Edit_Art()
+        public Edit_Cour()
         {
             InitializeComponent();
-            getAllArticles();
+            getAllCourses();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -35,44 +35,44 @@ namespace Admin_Control_Panel
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Article article = (Article)Art_ListBox.SelectedItem;
-            Article_Edit art = new Article_Edit(article);
+            Course course = (Course)Art_ListBox.SelectedItem;
+            Course_Edit art = new Course_Edit(course);
             art.ShowDialog();
             this.Close();
         }
 
         private async void btn_Delete_Click(object sender, EventArgs e)
         {
-            Article announcement = (Article)Art_ListBox.SelectedItem;
+            Course announcement = (Course)Art_ListBox.SelectedItem;
 
-            var uri = new Uri(string.Format(ApiClient.uriBase + "remove-article-by-id/" + announcement.id.ToString() + "/", string.Empty));
+            var uri = new Uri(string.Format(ApiClient.uriBase + "remove-course-by-id/" + announcement.id.ToString() + "/", string.Empty));
             try
             {
                 HttpResponseMessage response = await ApiClient.httpClient.DeleteAsync(uri);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    getAllArticles();
-                    MessageBox.Show("Article deleted.");
+                    getAllCourses();
+                    MessageBox.Show("Course deleted.");
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    MessageBox.Show("Article does not exist.");
+                    MessageBox.Show("Course does not exist.");
                 }
                 else
                 {
-                    MessageBox.Show("Error. Edit_Art.cs btn_Delete_Click() try1");
+                    MessageBox.Show("Error. Edit_Cour.cs btn_Delete_Click() try1");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Edit_Art.cs btn_Delete_Click() catch1");
+                MessageBox.Show("Error. Edit_Cour.cs btn_Delete_Click() catch1");
             }
         }
 
-        private async void getAllArticles()
+        private async void getAllCourses()
         {
-            var uri = new Uri(string.Format(ApiClient.uriBase + "get-all-articles/", string.Empty));
+            var uri = new Uri(string.Format(ApiClient.uriBase + "get-all-courses/", string.Empty));
             try
             {
                 HttpResponseMessage response = await ApiClient.httpClient.GetAsync(uri);
@@ -80,17 +80,17 @@ namespace Admin_Control_Panel
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();
-                    Art_ListBox.DataSource = JsonConvert.DeserializeObject<List<Article>>(content);
-                    Art_ListBox.DisplayMember = "subject";
+                    Art_ListBox.DataSource = JsonConvert.DeserializeObject<List<Course>>(content);
+                    Art_ListBox.DisplayMember = "name";
                 }
                 else
                 {
-                    MessageBox.Show("Error. Edit_Art.cs getAllArticles() try1");
+                    MessageBox.Show("Error. Edit_Cour.cs getAllCourses() try1");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Edit_Art.cs getAllArticles() catch1");
+                MessageBox.Show("Error. Edit_Cour.cs getAllCourses() catch1");
             }
         }
     }

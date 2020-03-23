@@ -38,7 +38,7 @@ namespace Admin_Control_Panel
         private void ArticleBt_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_Art fa = new Form_Art();
+            Form_Cour fa = new Form_Cour();
             fa.ShowDialog();
             this.Close();
         }

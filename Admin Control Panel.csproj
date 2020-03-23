@@ -55,11 +55,11 @@
     <Compile Include="Announcement_Edit.Designer.cs">
       <DependentUpon>Announcement_Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Article_Edit.cs">
+    <Compile Include="Course_Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Article_Edit.Designer.cs">
-      <DependentUpon>Article_Edit.cs</DependentUpon>
+    <Compile Include="Course_Edit.Designer.cs">
+      <DependentUpon>Course_Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Contact_Edit.cs">
       <SubType>Form</SubType>
@@ -73,11 +73,11 @@
     <Compile Include="Edit_Annc.Designer.cs">
       <DependentUpon>Edit_Annc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Edit_Art.cs">
+    <Compile Include="Edit_Cour.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Edit_Art.Designer.cs">
-      <DependentUpon>Edit_Art.cs</DependentUpon>
+    <Compile Include="Edit_Cour.Designer.cs">
+      <DependentUpon>Edit_Cour.cs</DependentUpon>
     </Compile>
     <Compile Include="Edit_Con.cs">
       <SubType>Form</SubType>
@@ -121,11 +121,11 @@
     <Compile Include="Form_Annc.Designer.cs">
       <DependentUpon>Form_Annc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Art.cs">
+    <Compile Include="Form_Cour.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Art.Designer.cs">
-      <DependentUpon>Form_Art.cs</DependentUpon>
+    <Compile Include="Form_Cour.Designer.cs">
+      <DependentUpon>Form_Cour.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Con.cs">
       <SubType>Form</SubType>
@@ -147,15 +147,15 @@
     </Compile>
     <Compile Include="Models\Announcement.cs" />
     <Compile Include="Models\ApiClient.cs" />
-    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="Program.cs" />
     <EmbeddedResource Include="Announcement_Edit.resx">
       <DependentUpon>Announcement_Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Article_Edit.resx">
-      <DependentUpon>Article_Edit.cs</DependentUpon>
+    <EmbeddedResource Include="Course_Edit.resx">
+      <DependentUpon>Course_Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contact_Edit.resx">
       <DependentUpon>Contact_Edit.cs</DependentUpon>
@@ -163,8 +163,8 @@
     <EmbeddedResource Include="Edit_Annc.resx">
       <DependentUpon>Edit_Annc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Edit_Art.resx">
-      <DependentUpon>Edit_Art.cs</DependentUpon>
+    <EmbeddedResource Include="Edit_Cour.resx">
+      <DependentUpon>Edit_Cour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_Con.resx">
       <DependentUpon>Edit_Con.cs</DependentUpon>
@@ -187,8 +187,8 @@
     <EmbeddedResource Include="Form_Annc.resx">
       <DependentUpon>Form_Annc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Art.resx">
-      <DependentUpon>Form_Art.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Cour.resx">
+      <DependentUpon>Form_Cour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Con.resx">
       <DependentUpon>Form_Con.cs</DependentUpon>
