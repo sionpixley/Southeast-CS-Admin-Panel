@@ -14,6 +14,8 @@ namespace Admin_Control_Panel
         public Form_Event()
         {
             InitializeComponent();
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm tt";
         }
 
         private void Home_E_bt_Click(object sender, EventArgs e)
